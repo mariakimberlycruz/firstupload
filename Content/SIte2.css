@@ -1,0 +1,340 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: white;
+    height: 7vh;
+    box-shadow: 0px 0px 1px 2px white;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+
+.headercolor {
+    color: #000000;
+    font-weight: bold;
+    flex: auto;
+    position: fixed;
+}
+
+    .headercolor:hover {
+        color: rgb(250, 248, 248);
+    }
+
+    .headercolor:visited {
+        color: white;
+    }
+
+.sacredheartname {
+    background-color: #8b3548;
+    border-radius: 10px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-right: 1em;
+    padding: .5em;
+    position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    background-color: #8b3548;
+    overflow-x: auto;
+    transition: 0.5s;
+    box-shadow: 0px 0px 3px 3px #8b3548;
+    border: solid 1px #8b3548;
+    top: 7vh;
+}
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+.dropupbtn {
+    background-color: #ffd800;
+    color: #000000;
+    font-size: 2em;
+    border: none;
+    border-radius: .25em;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.dropup {
+    position: relative;
+    margin-top: 5em;
+    background-color: #ffd800
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #ffd800;
+    min-width: 160px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+    .dropup-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropup-content a:hover {
+            background-color: #ccc
+        }
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropbtn {
+    background-color: #ffd800;
+}
+
+.datebtn {
+    width: 70%;
+    background-color: #ffd800;
+}
+
+
+
+.datetime {
+    color: #fff;
+    background: #10101E;
+    font-family: "Segoe UI", sans-serif;
+    width: 95%;
+    padding: 15px 10px;
+    border: 3px solid #d46f85;
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+    margin: 0 auto;
+}
+
+    .datetime:hover {
+        background: #d46f85;
+        box-shadow: 0 0 30px #d46f85;
+        cursor: pointer;
+    }
+
+.date {
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    font-size: 25px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+    .time span:not(:last-child) {
+        position: relative;
+        margin: 0 6px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .time span:last-child {
+        background: #d46f85;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 10px;
+        padding: 0 5px;
+        border-radius: 3px;
+    }
+
+
+.grad1 {
+    height: auto;
+    background-color: #d46f85;
+    background-image: linear-gradient(#d46f85,#d46f85);
+    width: 85%;
+    margin-left: 15%;
+    padding: .25em 1em;
+    z-index: -2;
+    margin-top: 6.75vh;
+}
+
+
+.footer {
+    bottom: 0;
+    height: auto;
+    padding: .5em;
+    background-color: #d46f85;
+    background-image: linear-gradient(#d46f85,#d46f85);
+    position: absolute, fixed;
+    width: 85%;
+    margin-left: 15%;
+}
+
+.level {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    color: #d46f85;
+}
+
+.loadprev {
+    border: none;
+    color: #d46f85;
+    padding: .25em;
+    font-weight: bold;
+    border-radius: .25em;
+    width: 50%;
+    box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.1);
+    transition: transform .2s;
+}
+
+    .loadprev:hover {
+        transform: scale(1.1);
+    }
+
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 8em 2%;
+    width: 96%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+
+
+
+select {
+    padding: 1em;
+    font-weight: bolder;
+    background-color: transparent;
+    color: white;
+    background-color: #d46f85;
+    border: solid 2px #d46f85;
+}
+
+.contain {
+    width: 83%;
+    margin-left: 16%;
+    padding: 0;
+}
+
+a {
+    border: none;
+    color: #d46f85;
+    padding: .25em;
+    font-weight: bold;
+    border-radius: .25em;
+    width: 50%;
+    box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.saveprint {
+    padding: 1px;
+    width: 100%;
+}
+
+.box {
+    border: solid 1px black;
+    width: 100%;
+    height: 15em;
+    font-size: .75vw;
+}
+
+@media print {
+    #print, tfoot, tbody tr:not(.printme) {
+        display: none !important;
+    }
+}
+
+.confirmation {
+    border: none;
+    background-color: green;
+    padding: .25em;
+    color: white;
+}
+
+.cancel {
+    border: none;
+    background-color: red;
+    padding: .25em;
+    color: white;
+}

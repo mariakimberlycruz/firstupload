@@ -1,0 +1,858 @@
+﻿body {
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
+}
+
+.sidenav {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 60px; /*  Stay at the top */
+    bottom: 0px;
+    /* margin-bottom: 60px; */
+    left: 0;
+    background-color: rgb(41, 41, 41); /* Black */
+    /* overflow-x: visible; Disable horizontal scroll */
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    /*padding-top: 20px;*/
+    box-shadow: 0 0 20px 0px rgb(117, 117, 117);
+}
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 12px 8px 12px 0px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #c9c6c6;
+        display: block;
+        background-color: #313131;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(41, 41, 41);
+        scroll-behavior: smooth;
+    }
+
+
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+
+/* Style page content */
+.main {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 10px 20px;
+    margin-top: 60px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 12px;
+        }
+}
+
+.navbarbg {
+    background-color: rgb(90, 131, 143);
+}
+
+.headercolor {
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+    .headercolor:hover {
+        color: rgb(250, 248, 248);
+    }
+
+    .headercolor:visited {
+        color: white;
+    }
+
+
+.sacredheartname {
+    background-color: #88afba;
+    border-radius: 10px;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 250px;
+    background-color: #313131;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(41, 41, 41);
+
+}
+
+
+
+
+.dashboardbox {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+    cursor: pointer;
+}
+
+.dashboardbox-totitem {
+    border-radius: 10px;
+    border-left: 10px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom:1px;
+    border-style: solid;
+    border-color: rgb(0, 9, 138);
+}
+
+    .dashboardbox-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.available {
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+.available-totitem2 {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #198754;
+}
+
+    .available-totitem2:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.available-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #198754;
+
+}
+
+    .available-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.erstay {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.erstay-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #6c757d;
+}
+
+    .erstay-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.occupied {
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.occupied-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #dc3545;
+/*    border-color: red;*/
+}
+
+    .occupied-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+
+.reserveder {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #509a91;
+    /*    border-color: red;*/
+}
+
+    .reserveder:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.reserveddirect {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #71334c;
+    /*    border-color: red;*/
+}
+
+    .reserveddirect:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+
+    /*cleann set settings*/
+.cleansettypelate {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+    background-color: #7EAC7A;
+    color: white;
+    /*    border-color: red;*/
+}
+
+    .cleansettypelate:hover {
+        background-color: rgb(228, 226, 226);
+    }
+.cleansettype {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+    background-color: #7EAC7A;
+    color: white;
+    /*    border-color: red;*/
+}
+
+    .cleansettype:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.cleantypeuv {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+
+    /*    border-color: red;*/
+}
+
+
+.cleantypeuv:hover {
+    background-color: rgb(228, 226, 226);
+}
+
+
+
+.cleanstarted {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+    background-color: #F5F180;
+    color: black;
+    /*    border-color: red;*/
+}
+
+
+.cleanstarted:hover {
+    background-color: rgb(228, 226, 226);
+}
+
+
+
+
+
+.cleantypeuv {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+    background-color: #98A4B1;
+    color: white;
+    /*    border-color: red;*/
+}
+
+
+.cleantypeuv:hover {
+    background-color: rgb(228, 226, 226);
+}
+
+
+
+
+.cleantypegeneral {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+    background-color: #6D5062;
+    color: white;
+    /*    border-color: red;*/
+}
+
+
+    .cleantypegeneral:hover {
+        background-color: rgb(228, 226, 226);
+    }
+.cleantyperoutine {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+    background-color: #9E2939;
+    color: white;
+    /*    border-color: red;*/
+}
+
+
+    .cleantyperoutine:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+
+
+.mgh {
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.mgh-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #e6df17;
+}
+
+    .mgh-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.mghc {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.mghc-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #ffb70a;
+}
+
+    .mghc-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.clean {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.clean-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+/*    color: white;*/
+
+    /*    background-color: #7EAC7A; */ /*set cleantype settings*/
+    /*background-color: #233503;*/ /*cleantype not set */
+   /*   background-color: #98A4B1;*/ /*Routine Clean */
+    /* background-color: #6D5062; */ /* Generral Clean*/
+/*        background-color: #9E2939;*/ /*Generral  infection*/
+}
+
+
+.clean:hover {
+    background-color: rgb(228, 226, 226);
+}
+
+
+
+
+
+.clean {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.cleanGeneral-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #fec8d8;
+    background-color: darkblue;
+}
+
+    .cleanGeneral-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+
+.cleanGeneral {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.repair {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.repair-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #255742;
+}
+
+    .repair-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.close {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.close-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #654eb4;
+}
+
+    .close-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.renovation {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.renovation-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #602e2e;
+}
+
+    .renovation-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.dires {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.dires-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #d291bc;
+}
+
+    .dires-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.erres {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.erres-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #957dad;
+}
+
+    .erres-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.reserve {
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0 0 10px 0px rgb(117, 117, 117);
+}
+
+.reserve-totitem {
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 8px;
+    border-style: solid;
+    border-color: #6c757d;
+}
+
+    .reserve-totitem:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.dashboardbox-lowstock {
+    border-radius: 10px;
+    border-left: 10px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: rgb(138, 16, 0);
+}
+
+    .dashboardbox-lowstock:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+.dashboardbox-oos {
+    border-radius: 10px;
+    border-left: 10px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: rgb(255, 30, 0);
+}
+
+    .dashboardbox-oos:hover {
+        background-color: rgb(228, 226, 226);
+    }
+
+
+
+.titlehead {
+    color: black;
+}
+
+
+.dashboardbox-details {
+    border-radius: 10px;
+    padding: 6px 10px 6px 10px;
+    background-color: wheat;
+}
+
+td a {
+    display: block;
+    border: 1px solid black;
+}
+
+
+th {
+    color: #a09e9e;
+    /* background-color: #313131; */
+}
+
+.sidenav::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+}
+
+.sidenavaccount::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+}
+
+::-webkit-scrollbar {
+    /* display: none; */
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(114, 114, 114);
+    border-radius: 5px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(95, 95, 95);
+    }
+
+
+.assetsview {
+    padding: 10px 25px 10px 25px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 0px 4px 5px 0px rgb(117, 117, 117);
+}
+
+
+.sidenavaccount {
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed; /*Fixed Sidebar (stay in place on scroll) */
+    z-index: 2; /* Stay on top */
+    top: 60px; /*  Stay at the top */
+    bottom: 0px;
+    /* margin-bottom: 60px; */
+    left: 251;
+    background-color: white; /* Black */
+    /* overflow-x: visible; Disable horizontal scroll */
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    padding-top: 20px;
+    border-right: 1px solid rgb(204, 204, 204);
+    /* box-shadow:  2px 5px 5px rgb(117, 117, 117); */
+}
+
+    /* The navigation menu links */
+    .sidenavaccount a {
+        padding: 12px 8px 12px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #080808;
+        display: block;
+        background-color: #fdfdfd;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(252, 249, 249);
+        scroll-behavior: smooth;
+    }
+
+        .sidenavaccount a:hover {
+            background-color: #d1d1d1;
+        }
+
+.loader {
+    border: 20px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 20px solid #3498db;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 0.7s linear infinite;
+}
+
+
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.toooltip {
+    position: relative;
+    display: inline;
+    /*border-bottom: 1px dotted black;*/
+}
+
+    .toooltip .toooltiptext {
+        visibility: hidden;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        background-color: dimgray;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 110%;
+        left: 32%;
+        margin-left: -50px;
+    }
+
+    .toooltip:hover .toooltiptext {
+        visibility: visible;
+    }
+/*
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}*/
+
+table133 {
+    font-family:Arial, Helvetica, sans-serif;
+    border-collapse:collapse;
+    /*width:100%;*/
+}
+
+td, th {
+    
+    border:1px solid #dddddd;
+    text-align:left;
+    padding:8px;
+}
+tr:nth-child(even) {
+    background-color:#dddddd;
+}
+
+.button1:hover {
+    background-color: #2f4f4f;
+    color: black;
+}
+
+.loader {
+    border: 20px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 20px solid #3498db;
+    border-bottom: 20px solid #3498db;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2.0s linear infinite;
+}
+table2 {
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    color:black;
+}
+
+.loader2 {
+    border: 20px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 20px solid #3498db;
+    border-top: 20px solid #3498db;
+    margin-left:260%;
+    /*margin-right:auto;*/
+    margin-top:150px;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 0.7s linear infinite;
+}
+
+
+
+
+
+
